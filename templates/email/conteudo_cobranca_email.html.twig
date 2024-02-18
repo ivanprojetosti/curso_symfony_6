@@ -1,0 +1,11 @@
+{% include "email/header_cobranca_email.html.twig" %}
+
+{% block content %}
+    <body>
+    {% for option in lista%}
+        <p>Nome: {{option.nome}} - Número Boleto: {{option.numeroBoleto}} - Vencimento: {{option.vencimentoBoleto}}</p>
+    {% endfor %}
+    </body>
+{% endblock %}
+
+{% include "email/footer_cobranca_email.html.twig" %}

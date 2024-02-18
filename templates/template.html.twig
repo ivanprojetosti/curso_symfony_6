@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Symfony!</title>
+    </head>
+    <body>
+        <h1>{{ "Olá amigo"}}</h1>
+
+        {% for info in data %}
+        <p> O título  é {{ info.titulo }}  e a descricão é {{info.descricao}}  !</p>
+
+        {% endfor %}
+
+        {# ... #}
+    </body>
+</html>
