@@ -48,6 +48,11 @@ public function noticia(){
     ]);
 }
 
+#[Route('bootstrap', name: "bootstrap")]
+public function bootstrap(){
+    return $this->render('bootstrap.html.twig',[]);
+}
+
     
     
 
