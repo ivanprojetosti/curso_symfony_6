@@ -53,6 +53,11 @@ public function bootstrap(){
     return $this->render('bootstrap.html.twig',[]);
 }
 
+
+public function stimulus(){
+    return $this->render('stimulus/stimulus.html.twig');
+}
+
     
     
 

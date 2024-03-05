@@ -6,4 +6,9 @@ route_type_laravel:
 encore:
     path:       /route-type-laravel
     controller: App\Controller\LaravelController::encore
-    methods:    GET    
+    methods:    GET
+
+stimulus:
+    path:       /stimulus
+    controller: App\Controller\BaseController::stimulus
+    methods:    GET  
