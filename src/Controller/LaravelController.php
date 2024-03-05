@@ -19,4 +19,12 @@ class LaravelController extends AbstractController
             'controller_name' => 'LaravelController',
         ]);
     }
+
+    public function encore(): Response
+    {
+        $this->log->exibirLog();
+        return $this->render('encore/base.html.twig', [
+            'controller_name' => 'LaravelController',
+        ]);
+    }
 }
