@@ -1,14 +1,5 @@
-route_type_laravel:
-    path:       /route-type-laravel
-    controller: App\Controller\LaravelController::show
-    methods:    GET
-
-encore:
-    path:       /route-type-laravel
-    controller: App\Controller\LaravelController::encore
-    methods:    GET
-
-stimulus:
-    path:       /stimulus
-    controller: App\Controller\BaseController::stimulus
-    methods:    GET  
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
