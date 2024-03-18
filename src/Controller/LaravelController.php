@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class LaravelController extends AbstractController
 {
-    public function __construct(protected LogService $log){
+    public function __construct(private LogService $log){
     }
     public function show(): Response
     {
